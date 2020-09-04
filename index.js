@@ -6,6 +6,7 @@ const app = express()
  * API to GET DATA
  */
 app.get('/', async (req, res) => {
+    const { body } = req
     return res.send({ id: 1, name: 'Tony', lastname: 'krikorian' })
 })
 
