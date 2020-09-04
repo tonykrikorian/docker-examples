@@ -11,4 +11,9 @@ services:
             dockerfile: Dockerfile
         ports:
             - 4001:80
+        volumes:
+            - mongo-data: /data/db #Directorio de los datos de mongo dentro del contenedor
+volumes: #Lista de volumenes disponibles, volumen en el host
+    - mongo-data:
+        driver: local
 
