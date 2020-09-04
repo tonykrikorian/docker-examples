@@ -1,5 +1,9 @@
 version: '3'
 services:
+    aws-backend-api:
+        image: 321304165861.dkr.ecr.us-west-2.amazonaws.com/my-app:latest
+        ports:
+            - 4001:80
     backend-api:
         image: backend-api:v1
         build:
