@@ -1,9 +1,10 @@
 pipeline{
-    agent any
+    agent {dockerfile true}
     stages{
         stage("Build"){
             steps{
-                echo "Building with docker"
+                sh 'echo Building with docker2'
+                sh 'echo MONGO_INITDB_ROOT_USERNAME = $MONGO_INITDB_ROOT_USERNAME'
             }
         }
     }
