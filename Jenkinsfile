@@ -3,6 +3,7 @@ pipeline{
     stages{
         stage("Build"){
             steps{
+                sh 'docker build -t test-app:${BUILD_NUMBER} .'
                 sh 'echo Prueba PR github agregar nuevos cambios 02'
                 sh 'echo Prueba PR github agregar nuevos cambios'
                 sh 'echo Testing pull request'
