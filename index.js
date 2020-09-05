@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 
 /**
- * API to GET DATA
+ * API to GET DATA about person
  */
 app.get('/', async (req, res) => {
     const { body } = req
