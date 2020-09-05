@@ -3,8 +3,9 @@ pipeline{
     stages{
         stage("Build"){
             steps{
-                sh 'echo Testing pull request'
+                sh 'echo Prueba PR github agregar nuevos cambios 02'
                 sh 'echo Prueba PR github agregar nuevos cambios'
+                sh 'echo Testing pull request'
                 sh 'echo Prueba PR github webhook URL AWS XXXX'
                 sh 'echo "Ejemplo del trigger desde VSCODE"'
                 sh 'echo Building with docker2 example file'
